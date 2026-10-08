@@ -1,6 +1,6 @@
 # Lab 4: Line following race
 
-The task was to drive the line as fast as possible with a nonlinear controller. In the simulator the robot goes at full speed and steers with P plus a cube term, so a small error gives a soft turn and a big error gives a strong turn. On the real robot I used PID and made it slow down when the error is big, and it finished the lap in about 45 seconds.
+The task was to drive the line as fast as possible with a nonlinear controller. In the simulator the robot goes at full speed and steers with P plus a cube term (the nonlinear part), so a small error gives a soft turn and a big error gives a strong turn. On the real robot I used PID, and the nonlinear part is the speed `v = base - Ks * abs(err)`, so it slows down when the error is big and finished the lap in about 45 seconds.
 
 ## Real robot (line_real.qrs)
 
