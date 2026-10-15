@@ -1,0 +1,4 @@
+# Battery voltage read on the TRIK display before and after each run (display resolution 0.1 V)
+file,before_V,after_V
+steps5_M4.txt,11.2,11.2
+steps5_M3.txt,11.2,11.2
